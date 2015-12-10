@@ -1,0 +1,279 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Tracking Device
+    link(rel='stylesheet', href='http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='main.css')
+  body
+    header
+      h1#name(style='color:white; padding-left:280px; margin-top:5px')
+        u iSEAL
+      #nav
+        a.btn.pull-right(href='#') Sign In/Out
+        a.btn.pull-right.midlink(href='/settings') Settings
+        a.btn.pull-right(href='#') Support
+        a.btn.pull-right.firstlink(href='#') Buy
+      #view
+        #key
+          button#view1.btn.btn-default.on Map
+          button#view2.btn.btn-default.off List
+    #container.col-md-12
+      .col-md-9.left-box
+        img#map(src='map.png')
+        div#status.nodisplay
+          select#status(name='view')
+                option(value='purchased') Purchased
+                option(value='active') Active
+                option(value='decomissioned') Decomissioned
+        table#tbList.nodisplay
+          thead
+            tr
+              th Serial No.
+              th L-Door Stat
+              th R-Door Stat
+              th Battery Lvel
+              th Rqt Email
+              th Email Opt Out
+              th Status
+          tr
+            td 17
+            td Closed
+            td Open
+            td Low
+            td
+              button Ping
+            td
+              input(type='checkbox')
+            td
+              select#status(name='view')
+                option(value='purchased') Purchased
+                option(value='active') Active
+                option(value='decomissioned') Decomissioned
+          tr
+            td 24
+            td Closed
+            td Closed
+            td Full
+            td
+              button Ping
+            td
+              input(type='checkbox')
+            td
+              select#status(name='view')
+                option(value='purchased') Purchased
+                option(value='active') Active
+                option(value='decomissioned') Decomissioned
+          tr
+            td 31
+            td Closed
+            td Closed
+            td Full
+            td
+              button Ping
+            td
+              input(type='checkbox')
+            td
+              select#status(name='view')
+                option(value='purchased') Purchased
+                option(value='active') Active
+                option(value='decomissioned') Decomissioned
+      .col-md-3.right-box
+        .col-md-11.sidebar
+          table#sideList
+            thead
+              tr
+                th Nml Status
+                th Serial No
+                th Battery Lvel
+            tr
+              td 1
+              td 17
+              td Low
+            tr
+              td 0
+              td 24
+              td Full
+            tr
+              td 0
+              td 31
+              td Full
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+            tr
+              td
+              td
+              td
+        .col-md-1.sidebarHeader
+          img#toggle(src='collapseIcon.png', style='height:25px')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script(src='http://code.jquery.com/ui/1.11.4/jquery-ui.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js')
+    script(src='main.js')

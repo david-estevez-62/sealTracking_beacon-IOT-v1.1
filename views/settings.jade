@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Tracking device
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='style.css')
+  body
+    .outer
+      .middle
+        .inner
+          h2 Settings:
+          form#savesettings
+            label View
+            br
+            select#view(name='view')
+              option(value='map') Map
+              option(value='list') List
+            br
+            hr
+            br
+            label Opt of Email
+            br
+            input(type='checkbox')
+            br
+            hr
+            br
+            label Change Email
+            br
+            input(type='email')
+            br
+            hr
+            br
+            label Create a Seal Email
+            br
+            input(type='email')
+            hr
+            br
+            label Change Billing Info
+            br
+            input(type='submit', value='Save')
